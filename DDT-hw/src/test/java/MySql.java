@@ -27,16 +27,5 @@ public class MySql {
             System.out.println(e.getMessage());
         }
         return conn;
-
     }
-
-    @Test
-    public void db() throws SQLException {
-        Connection conn = MySql.getConnection();
-
-        System.out.println(String.format("Connected to database %s "
-                + "successfully.", conn.getCatalog()));
-
-    }
-
 }
